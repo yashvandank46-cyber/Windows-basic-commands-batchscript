@@ -95,7 +95,7 @@ Repeat the process if the user enters Y, and exit with a thank-you message if th
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 
 
-##program
+## PROGRAM
 ```
 @echo off
 
@@ -133,7 +133,7 @@ pause
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
 
-##program
+## PROGRAM
 ```
 @echo off
 
@@ -162,7 +162,7 @@ Make sure the script works for files located in the same directory as the batch 
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
 
-##program
+## PROGRAM
 ```
 @echo off
 
@@ -188,7 +188,7 @@ Exit – Exits the script with a goodbye message
 The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
 
 
-##program
+## PROGRAM
 ```
 @echo off
 
