@@ -67,7 +67,14 @@ Compare the file hello.txt and rose.txt
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
+##program
+```
+@echo off
+set name=John
+echo Hello, %name%!
+pause
 
+```
 
 
 
@@ -88,6 +95,33 @@ Repeat the process if the user enters Y, and exit with a thank-you message if th
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 
 
+##program
+```
+@echo off
+
+:main
+
+set /p number=Enter a number:
+
+set /a remainder=%number% %% 2
+
+if %remainder%==1 (
+    echo %number% is an odd number.
+) else (
+    echo %number% is not an odd number.
+)
+
+choice /M "Do you want to check another number"
+
+if %errorlevel%==2 goto end
+
+if %errorlevel%==1 goto main
+
+:end
+echo Thank you
+pause
+```
+
 
 ## OUTPUT
 
@@ -99,6 +133,16 @@ Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
 
+##program
+```
+@echo off
+
+for %%i in (1 2 3 4 5) do (
+    echo Number: %%i
+)
+
+pause
+```
 
 
 
@@ -118,6 +162,19 @@ Make sure the script works for files located in the same directory as the batch 
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
 
+##program
+```
+@echo off
+
+if exist sample.txt (
+    echo sample.txt exists.
+) else (
+    echo sample.txt does not exist.
+)
+
+pause
+```
+
 ## OUTPUT
 
 <img width="911" height="242" alt="image" src="https://github.com/user-attachments/assets/c9328cb1-31d3-44d5-9893-75ba99af2f5e" />
@@ -130,6 +187,36 @@ Create a File – Creates a file named newfile.txt with the content This is a ne
 Exit – Exits the script with a goodbye message
 The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
 
+
+##program
+```
+@echo off
+
+:menu
+
+echo 1. Say Hello
+echo 2. Create a File
+echo 3. Exit
+
+set /p choice=Choose an option:
+
+if "%choice%"=="1" goto hello
+if "%choice%"=="2" goto createfile
+if "%choice%"=="3" goto end
+
+:hello
+echo Hello, World!
+goto menu
+
+:createfile
+echo Creating a file...
+echo This is a new file > newfile.txt
+goto menu
+
+:end
+echo Goodbye!
+pause
+```
 
 ## OUTPUT
 <img width="892" height="434" alt="image" src="https://github.com/user-attachments/assets/f8ea9610-211e-499e-8e41-fe9799955ba2" />
