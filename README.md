@@ -26,6 +26,9 @@ Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
 
+<img width="1920" height="111" alt="image" src="https://github.com/user-attachments/assets/6c6bf8d9-2539-4ef7-97c2-317d20c6616a" />
+
+
 
 
 
@@ -33,36 +36,55 @@ Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
 
+<img width="489" height="165" alt="image" src="https://github.com/user-attachments/assets/a00be8c9-b1d9-4b52-8859-4ff8350eedc5" />
+
+
 
 Create the file Rose.txt
 
 ## COMMAND AND OUTPUT
 
+<img width="270" height="90" alt="image" src="https://github.com/user-attachments/assets/de8a6f7c-fe2b-4c85-9d7c-f39ccbce1e72" />
+
+
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
+<img width="1920" height="113" alt="image" src="https://github.com/user-attachments/assets/6df52f3b-c0d3-4f37-a458-30c790dfda90" />
+
+
 
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
 
+<img width="1920" height="131" alt="image" src="https://github.com/user-attachments/assets/aed6d4b3-73ea-42a9-b80a-dbcdddd11f49" />
+
+
 Remove the file hello1.txt
 
 ## COMMAND AND OUTPUT
 
+<img width="1920" height="105" alt="image" src="https://github.com/user-attachments/assets/e4590e1e-d853-481b-967d-bbfd33492ebe" />
+
+
 List out the file hello1.txt in the current directory
 
 ## COMMAND AND OUTPUT
+<img width="1920" height="250" alt="image" src="https://github.com/user-attachments/assets/e9181e0c-267f-4f39-bdd2-28c11ce2da02" />
+
 
 List out all the associated file extensions 
 
 ## COMMAND AND OUTPUT
+<img width="1920" height="773" alt="image" src="https://github.com/user-attachments/assets/14667adb-d304-44dd-8121-096dba459daa" />
 
 
 Compare the file hello.txt and rose.txt
 
 ## COMMAND AND OUTPUT
+<img width="1920" height="210" alt="image" src="https://github.com/user-attachments/assets/18edd8d6-505d-4e03-acf7-7c68bec2f8f9" />
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
